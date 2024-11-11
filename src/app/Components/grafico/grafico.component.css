@@ -13,3 +13,18 @@
 .nombre{
 font-size: 25px;
 }
+.stats {
+    margin-top: 20px;
+}
+
+.stat-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.stat-bar span {
+    width: 100px; /* Ancho fijo para la etiqueta */
+    text-align: right;
+   
+}

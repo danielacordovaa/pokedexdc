@@ -1,0 +1,59 @@
+/* Contenedor para centrar los botones en la parte inferior */
+.button-container {
+    position: fixed;
+    bottom: 20px; /* Ajuste de la distancia desde la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px; /* Espacio entre los botones */
+  }
+  
+  /* Estilos de los botones arcade */
+  .arcade1-button {
+    background-color: #ff3a96; /* Color vibrante */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px #ff3a96; /* Sombra sólida para estilo arcade */
+    transition: transform 0.1s ease-in-out;
+    bottom: 50px; /* Distancia desde la parte inferior */
+    left: 220px; /* Distancia desde la izquierda */
+  }
+  
+  .arcade2-button {
+    background-color: #ff3a96; /* Color vibrante */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px #ff3a96; /* Sombra sólida para estilo arcade */
+    transition: transform 0.1s ease-in-out;
+    bottom: 50px; /* Distancia desde la parte inferior */
+    right: 220px; /* Distancia desde la derecha */
+  }
+  
+  
+  
+  /* Efecto hover */
+  .arcade-button:hover {
+    background-color: #ff6896; /* Cambio de color en hover */
+    transform: translateY(-3px); /* Levanta un poco en hover */
+  }
+  
+  /* Efecto de clic */
+  .arcade-button:active {
+    transform: translateY(3px); /* Simula que el botón es presionado */
+    box-shadow: 0px 2px 0px #000;
+  }
+  

@@ -9,13 +9,14 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class PokedexComponent {
   
-@Input({required:true})imageUrl : string='';
-@Output() clickPokemon = new EventEmitter<number>();
+@Input({required:true})imageUrl : string="";
+@Output() pokemonId: EventEmitter<number> =new EventEmitter();
+
   previoPokemon(){
-    this.clickPokemon.emit(-1);
+    this.pokemonId.emit(-1);
 
 }
 siguientePokemon(){
-  this.clickPokemon.emit(1);
+  this.pokemonId.emit(1);
 }
 }

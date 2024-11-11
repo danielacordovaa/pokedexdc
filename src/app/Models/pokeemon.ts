@@ -65,7 +65,7 @@ export class PokemonModel{
     mostrarPokemon():string{
         return'ID:' + this.id + "Nombre"+ this.nombre + "Imagen"+ this.imagen + "Vida"+ this.vida + "Ataque"+ this.ataque + "Defensa"+ this.defensa + "Tipo"+ this.tipo;
     }
-    calcularDaño(pokemonAtacante:PokemonModel):number{
+    calcularDaño(pokemonAtacante:PokemonModel):void{
         if(pokemonAtacante.getAtaque()>this.getDefensa()){
             
         }

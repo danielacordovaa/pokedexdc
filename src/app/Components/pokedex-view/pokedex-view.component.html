@@ -1,14 +1,16 @@
 <section class="pokedex-view">
     <span class="title">POKEDEX</span>
     <section class="pokedex">
-        <app-pokedex [imageUrl]="pokemonImagen"(clickPokemon)="handlePokemon($event)"></app-pokedex>
+        <app-pokedex (pokemonId)="handlePokemon($event)" [imageUrl]="pokemonImagen"></app-pokedex>
         
         <div class="points">
          <span class="point"></span>
          <span class="point"></span>
         </div>
         </section>
-        <button ></button>
+        <button class="button."></button>
     <section class="graph">
+        
+        
         <app-grafico ></app-grafico>
     

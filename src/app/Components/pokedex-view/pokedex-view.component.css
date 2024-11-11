@@ -2,7 +2,7 @@
 .pokedex-view {
   max-width: 576px;
   height: 100vh;
-  background: linear-gradient(135deg, #f72585, #7209b7, #4361ee, #4cc9f0);
+  background: linear-gradient(135deg, #f72584c0, #7109b7cc, #4362eeb2, #4ccaf0af);
   background-size: 400% 400%;
   border: 5px solid #ff3a96;
   display: flex;
@@ -25,19 +25,19 @@
 .title {
   font-size: 3rem;
   font-weight: bold;
-  color: #f72585;
+  color: #472735;
   text-shadow: 0 0 10px #ff3a96, 0 0 20px #ff3a96, 0 0 30px #ff3a96;
   animation: neonEffect 1.5s infinite alternate;
 }
 
 @keyframes neonEffect {
   from {
-    color: #ff3a96;
-    text-shadow: 0 0 5px #ff3a96, 0 0 10px #ff3a96, 0 0 15px #ff3a96;
+    color: #ff00bf;
+    text-shadow: 0 0 5px #050505, 0 0 10px #000000, 0 0 15px #000000;
   }
   to {
-    color: #ff92b6;
-    text-shadow: 0 0 20px #ff92b6, 0 0 30px #ff92b6, 0 0 40px #ff92b6;
+    color: #ff00bf;
+    text-shadow: 0 0 20px #0c0c0c, 0 0 30px #000000, 0 0 40px #030303;
   }
 }
 
@@ -64,10 +64,11 @@
 
 /* Imagen del Pokémon */
 .pokemon-image {
-  width: 300px;
+  width: 500px;
   height: 300px;
   object-fit: contain;
   border: 5px solid #ff3a96;
+  justify-content: center;
   background-color: #fff;
   border-radius: 50%;
   transition: transform 0.5s ease;
@@ -149,3 +150,13 @@ button:hover {
   transform: scale(1.2);
   box-shadow: 0 0 20px #ff3a96, 0 0 30px #ff3a96, 0 0 40px #ff3a96;
 }
+.button-container´{
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 50px;
+}
+
+
